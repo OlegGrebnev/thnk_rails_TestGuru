@@ -1,24 +1,16 @@
-# README
+# TestGuru
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Requirements:
 
-Things you may want to cover:
+- Ruby 2.6.3
+- Git
 
-* Ruby version
+## i18n translations
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Check health: `i18n-tasks health`
+- Find missing keys: `i18n-tasks missing`
+- Add missing keys: `i18n-tasks add-missing`
+- Find unused keys: `i18n-tasks unused`
+- Remove unused keys: `i18n-tasks remove-unused`
+- Normalize (Sort the keys, and move them to the respective files): `i18n-tasks normalize -p`
+- Export missing and unused keys to XLSX: `i18n-tasks xlsx-report`
